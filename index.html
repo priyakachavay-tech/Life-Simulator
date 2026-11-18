@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="nav">
+
+        <h2>LIFE SIMULATOR</h2>
+
+        <a href="#Home">Home</a>
+        <a href="#Goal">Select Goal</a>
+        <a href="#Dashboard">Dashboard</a>
+        <a href="#About">About</a>
+
+    </nav>
+
+    <!-- Hero section -->
+
+    <section id="Home">
+
+        <h4>Your Journey Starts Here</h4>
+        <h1>Explore Your <span>Future</span> </h1>
+
+        <p>Make better decisions, explore your goals and build your roadmap.</p>
+
+        <button id="btn">Get Started</button>
+
+    </section>
+
+    <!-- Goal Selector -->
+
+    <section id="Goal">
+
+        <h2>Choose Your Goal</h2>
+        <p>Select an area where you want to improve your life.</p>
+
+        <div class="card">
+            <div class="card1">
+                <h3>Learn Coding</h3>
+                <p>Learn coding step-by-step and practice regularly.</p>
+                <button type="button" data-goal="Learn Coding">Select Goal</button>
+            </div>
+
+            <div class="card2">
+                <h3>Improve Studies</h3>
+                <p>Study daily, revise regulary make short notes.</p>
+                <button type="button" data-goal="Improve Studies">Select Goal</button>
+            </div>
+
+
+            <div class="card3">
+                <h3>Time Management</h3>
+                <p>Manage your daily routine and use time effectively.</p>
+                <button type="button" data-goal="Time Management">Select Goal</button>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Decision Cards -->
+
+    <section id="coding" hidden>
+
+        <h2>Explore Your Decision </h2>
+        <p>What would you like to do ?</p>
+
+        <!-- Learn Coding -->
+        <h1>Learn Coding</h1>
+        <div class="goal" id="decisionOptions">
+            <div class="goal-card">
+                <h3>Improve Programming Skills</h3>
+                <p>Practice coding daily and learn new concepts.</p>
+                <button class="Decision-button" type="button" data-decision="Improve Programming Skills">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="goal-card">
+                <h3>Learn New Technology</h3>
+                <p>Explore React, databases and other technologies. </p>
+                <button class="Decision-button" type="button" data-decision="Learn New Technology">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="goal-card">
+                <h3>Build Real-World Projects</h3>
+                <p>Make small projects and learn by doing.<br>
+                    Create simple Calculator or To-Do List</p>
+                <button class="Decision-button" type="button" data-decision="Build Real-World Projects">
+                    Select Decision
+                </button>
+
+            </div>
+
+            <div class="goal-card">
+                <h3>Develop Problem-Solving Skills</h3>
+                <p>Learn to solve problem step-by-step.<br>
+                    Solve a problem using loops or conditions in C .
+                </p>
+                <button class="Decision-button" type="button" data-decision="Develop Problem-Solving Skills">
+                    Select Decision
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="studies" hidden>
+        <h1>Improve Studies</h1>
+        <!-- Improve Studies-->
+        <div class="last">
+            <div class="last-card">
+                <h3>Daily Revision</h3>
+                <p>Revise daily to remember what you learn.<br> Revise HTML and CSS topics every day.</p>
+                <button class="Decision-button" type="button" data-decision="Daily Revision">
+                    Select Decision
+                </button>
+
+            </div>
+
+            <div class="last-card">
+                <h3>Practicing Questions</h3>
+                <p>Practice coding questions to improve your skills.<br> Write programs to check even or odd numbers.
+                </p>
+                <button class="Decision-button" type="button" data-decision="Practicing Questions">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="last-card">
+                <h3>Making Short Notes</h3>
+                <p>Make short notes to remember important topics.<br>Write important HTML tags and CSS properties in a
+                    notebook.</p>
+                <button class="Decision-button" type="button" data-decision="Making Short Notes">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="last-card">
+                <h3>Weekly Test</h3>
+                <p>Take a test every week to check your learning.<br>Solve 10 coding questions every Sunday.</p>
+                <button class="Decision-button" type="button" data-decision="Weekly Test">
+                    Select Decision
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="time" hidden>
+        <!--Time Management-->
+        <h1>Time Management</h1>
+        <div class="manage">
+            <div class="manage-card">
+                <h3>Set Daily Goal</h3>
+                <p>Set small goals to complete your daily tasks.<br>Complete one HTML topic and practice 5 questions
+                    today.</p>
+                <button class="Decision-button" type="button" data-decision="Set Daily Goal">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="manage-card">
+                <h3>Create a Study Time-Table</h3>
+                <p>Make a time-table to manage your study time.<br>Study coding for 2 hours and revise for 30 min.</p>
+                <button class="Decision-button" type="button" data-decision="Create a Study Time-Table">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="manage-card">
+                <h3>Avoid Distraction</h3>
+                <p>Stay focused and avoid wasting time.<br> Keep your phone away while studying.</p>
+                <button class="Decision-button" type="button" data-decision="Avoid Distraction">
+                    Select Decision
+                </button>
+            </div>
+
+            <div class="manage-card">
+                <h3>Take Short Breaks</h3>
+                <p>Take short breaks to stay fresh and focused.<br>Take 5 min breaks after 30 min of study.</p>
+                <button class="Decision-button" type="button" data-decision="Take Short Breaks">
+                    Select Decision
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Decision Details Section -->
+
+    <section id="decisionDetails" hidden>
+
+        <h2>Your Selected Decision</h2>
+
+        <h3 id="chosenDecision"></h3>
+
+        <p id="decisionMessage"></p>
+
+        <button type="button" id="continueTask">
+            Continue to Daily Tasks
+        </button>
+
+    </section>
+
+    <!-- To-Do List -->
+
+    <section id="Tasks">
+
+        <h2>Choose Your Daily Tasks</h2>
+        <p>Break your goals into small and achievable tasks.</p>
+
+        <div class="task-container">
+            <div class="task-card">
+
+                <h3>My Task List</h3>
+                <input type="text" id="taskInput" placeholder="Enter your task">
+
+                <button type="button" id="addTaskBtn">Add Task</button>
+
+                <ul id="taskList"></ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Dashboard -->
+
+    <section id="Dashboard">
+
+        <h2>My Progress Dashboard</h2>
+        <p>Track your goals and monitor your daily progress.</p>
+
+        <div class="dashboard-container">
+            <div class="dashboard-card">
+
+                <h3>Total Goals</h3>
+                <h2 id="totalTasks">0</h2>
+                <p>Goals Selected</p>
+            </div>
+
+            <div class="dashboard-card">
+
+                <h3>Completed Tasks</h3>
+                <h2 id="completedTasks">0</h2>
+                <p>Tasks Completed</p>
+            </div>
+
+            <div class="dashboard-card">
+
+                <h3>Pending Tasks</h3>
+                <h2 id="pendingTasks">0</h2>
+                <p>Tasks Remaining</p>
+
+            </div>
+        </div>
+
+        <div class="progress-card">
+            <div class="progress" id="progressBarFill"></div>
+
+            <h3>Overall Progress</h3>
+            <p>Your Goal Completion</p>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <h4 id="progressText">0% Completed</h4>
+
+        </div>
+
+    </section>
+
+    <!-- About section -->
+
+    <section id="About">
+
+        <h2>About Life Simulator</h2>
+
+        <p class="about-intro">
+            Life Simulator helps students make better decisions and explore different paths towards their goals.
+        </p>
+
+        <div class="about-container">
+            <div class="about-card">
+
+                <h3>Our Purpose</h3>
+
+                <p>
+                    To help students understand their goals
+                    and make better decisions for their future.
+                </p>
+
+            </div>
+            <div class="about-card">
+
+                <h3>How It Works</h3>
+
+                <p>
+                    Select a goal, explore different decisions,
+                    compare outcomes and create your action plan.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>Who Can Use It?</h3>
+
+                <p>
+                    Students who want to improve their education,
+                    career planning and time management.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="Footer">
+
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>LIFE SIMULATOR</h2>
+                <p>
+                    Explore your goals, understand your decisions and create a better future.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#Home">Home</a>
+                <a href="#Goal">Select Goal</a>
+                <a href="#Dashboard">Dashboard</a>
+                <a href="#About">About</a>
+
+            </div>
+
+            <div class="footer-contact">
+                <h3>Our Purpose</h3>
+                <p>Learn || Decide || Grow</p>
+                <p>Build your future with better decisions.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>2026 Life Simulator. All Rights Reserved.</p>
+        </div>
+
+
+    </footer>
+    <!-- Back To Top Button -->
+    <button id="topButton" type="button">Top</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
